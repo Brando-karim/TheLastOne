@@ -1,0 +1,136 @@
+.login-page {
+    font-family: Arial, sans-serif;
+    background-image: url("../../public/kk.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.login-page .login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-page .logo  {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.login-page .logo span {
+    color: green;
+}
+
+.login-page h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.login-page p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-page p a {
+    color: green;
+    text-decoration: none;
+}
+
+.login-page p a:hover {
+    text-decoration: underline;
+}
+
+.login-page .social-login {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.login-page .social-btn {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.1);
+}
+
+.login-page .social-btn img {
+    width: 30px;
+}
+
+.login-page .divider {
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+.login-page .divider span {
+    padding: 0 10px;
+}
+
+.login-page .divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 58%;
+    border-bottom: 1px solid #a8a8a8;
+}
+
+.login-page .divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 58%;
+    right: 0;
+    border-top: 1px solid #a8a8a8;
+}
+
+.login-page form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-page input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-page .password-field {
+    position: relative;
+}
+
+
+
+.login-page .forgot-password {
+    text-align: right;
+    margin-bottom: 20px;
+    color: green;
+    text-decoration: none;
+}
+
+.login-page .forgot-password:hover {
+    text-decoration: underline;
+}
+
+.login-page .login-btn {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-page .login-btn:hover {
+    background-color: darkgreen;
+}

@@ -1,0 +1,30 @@
+image: node:lts
+
+stages:
+  - build
+  - deploy
+
+variables:
+  CI_NODE_ENV: "production"
+  NODE_ENV: "production"
+
+before_script:
+  - yarn install
+
+build:
+  stage: build
+  script:
+    - yarn build
+  artifacts:
+    paths:
+      - build
+
+pages:
+  stage: deploy
+  script:
+    - mv build/* public/
+  artifacts:
+    paths:
+      - public
+  only:
+    - main

@@ -1,0 +1,124 @@
+.signup{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    padding: 10px;
+    margin: 10px;
+}
+
+.signup .content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 650px;
+    width: 600px;
+}
+
+.signup .content-title{
+    padding: 20px;
+    padding-top: 70px;
+    width: 400px;
+    text-align: center;
+    font-size: 40px;
+    font-family: Forte;
+
+}
+
+.signup .info{
+    text-align: center;
+    width: 400px;
+    margin: 20px;
+    margin-top: 10px;
+    color: grey;
+    font-weight: 100;
+}
+
+@media (max-width: 991px) {
+    .signup {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .signup .image img {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .signup {
+        flex-direction: column;
+    }
+
+    .signup .image img {
+        max-width: 100%;
+    }
+}
+
+.signup .form-side {
+    flex: 1;
+    padding: 40px;
+}
+
+.signup .form-side h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.signup .form-group {
+    margin-bottom: 15px;
+}
+
+.signup .form-group label {
+    display: inline;
+    margin-bottom: 5px;
+}
+
+.signup .form-group input[type="email"],
+.signup .form-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.signup .form-group input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.signup .form-group .small-text {
+    font-size: 14px;
+}
+
+.signup .form-group a, .signup .login-link {
+    color: green;
+    text-decoration: none;
+}
+
+.signup .form-group a:hover, .signup .login-link:hover {
+    text-decoration: underline;
+}
+
+.signup .form-group .captcha {
+    margin-top: 15px;
+}
+
+.signup .form-group button {
+    width: 30%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: green;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.signup .form-group button:hover {
+    background-color: darkgreen;
+}
+
+.signup .form-group p {
+    text-align: center;
+    margin-top: 10px;
+}
